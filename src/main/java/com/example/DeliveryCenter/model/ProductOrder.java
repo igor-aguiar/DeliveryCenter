@@ -10,7 +10,7 @@ public class ProductOrder {
     private Integer id;
     @OneToOne
     private Order order;
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     private Product product;
     private Integer amount;
 

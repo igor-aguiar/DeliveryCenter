@@ -8,7 +8,7 @@ import java.util.List;
 @Entity
 @Table(name = "clients")
 public class Client extends Person{
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Order> orders = new ArrayList<>();
     @OneToOne
     private LoyaltyCard loyaltyCard;
