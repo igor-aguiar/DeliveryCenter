@@ -19,7 +19,7 @@ public class Person {
     private String email;
     private String password;
 
-    private static DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    private final static DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     public Person() {
     }
