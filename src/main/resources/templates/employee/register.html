@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="~{default :: head('Register Employee')}">
+</head>
+<body style="background-color: #CED4DA">
+<div class="container">
+  <header th:replace="~{default :: header}"></header>
+  <main>
+    <h3 class="mb-4 d-flex justify-content-center">Register Employee</h3>
+    <form action="/employee/register" method="post">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="eEmail">E-mail:</label>
+          <input class="form-control" type="email" name="employeeEmail" id="eEmail">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="ePassword">Password:</label>
+          <input class="form-control" type="password" name="employeePassword" id="ePassword">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="eName">Name:</label>
+        <input class="form-control" type="text" name="employeeName" id="eName">
+        <label for="eBirth">Birthdate:</label>
+        <input class="form-control" type="date" name="employeeBirthdate" id="eBirth">
+      </div>
+      <button style="background-color: #5AED83" class="btn" type="submit">Register</button>
+    </form>
+  </main>
+  <footer>
+
+  </footer>
+</div>
+</body>
+</html>

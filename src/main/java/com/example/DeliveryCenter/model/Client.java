@@ -21,6 +21,10 @@ public class Client extends Person{
         this.loyaltyCard = loyaltyCard;
     }
 
+    public Client(String clientName, LocalDate clientBirthdate, String clientEmail, String clientPassword) {
+        super(clientName, clientBirthdate, clientEmail, clientPassword);
+    }
+
     public List<Order> getOrders() {
         return orders;
     }
