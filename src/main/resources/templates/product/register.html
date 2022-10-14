@@ -6,6 +6,9 @@
 <div class="container">
     <header th:replace="~{default :: header}"></header>
     <main>
+        <div>
+            <nav th:replace="~{default :: navbar}"></nav>
+        </div>
         <h3 class="mb-4 d-flex justify-content-center">Register Product</h3>
         <form action="/product/register" method="post">
             <div class="form-row">

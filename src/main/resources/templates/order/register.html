@@ -6,6 +6,9 @@
 <div class="container">
     <header th:replace="~{default :: header}"></header>
     <main>
+        <div>
+            <nav th:replace="~{default :: navbar}"></nav>
+        </div>
         <h3 class="mb-4 d-flex justify-content-center">Register Order</h3>
         <form action="/order/register" method="post">
             <div class="form-row">
@@ -15,7 +18,7 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="oTime">Opened:</label>
-                    <input class="form-control" type="datetime-local" name="orderTime" id="oTime">
+                    <input th:value="${orderTime}" class="form-control" type="text" name="orderTime" id="oTime">
                 </div>
             </div>
             <div class="form-row">
