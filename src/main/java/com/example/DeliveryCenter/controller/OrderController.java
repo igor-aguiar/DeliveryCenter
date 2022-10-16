@@ -16,7 +16,7 @@ public class OrderController {
     public ModelAndView register(){
         ModelAndView mv = new ModelAndView("order/register");
         LocalDateTime orderTime = LocalDateTime.now();
-        mv.addObject("orderTime", orderTime.format(DateTimeFormatter.ofPattern("dd/MM/yy HH:mm")));
+        mv.addObject("orderTime", orderTime);
         return mv;
     }
 }
