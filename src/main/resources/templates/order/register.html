@@ -18,7 +18,7 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="oTime">Opened:</label>
-                    <input th:value="${orderTime}" class="form-control" type="text" name="orderTime" id="oTime">
+                    <input th:value="${#temporals.format(orderTime, 'dd/MM/yyyy HH:mm')}" class="form-control" type="text" name="orderTime" id="oTime">
                 </div>
             </div>
             <div class="form-row">
